@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 40px 0;
+    font-size: 60px;
+    display: flex;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+article {
+    background-color: hsla(0, 100%, 50%, 0.212);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 2px 0px 23px 10px rgba(252,13,13,0.53);
+}
+
+article>p {
+    font-size: 27px;
+    font-style: italic;
+}
+
+.sum {
+    margin: 20px 0px;
+    font-size: 25px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+.card {
+    border-radius: 15px;
+    display: flex;
+    border: 2px solid rgb(116, 114, 114);
+    align-items: center;
+    height: 150px;
+    width: 260px;
+    justify-content: center;
+    margin: 0px auto;
+    font-size: 30px;
+    text-decoration: none;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjX1pnSwUgvxeT5TF0TK9aEZUiDLyVWaY7A&usqp=CAU);
+    color: blueviolet;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card:visited {
+    color: rgb(151, 148, 148);
+}
+
+.card:active {
+    color: yellow;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+footer>p>span {
+    font-size: 50px;
+    color: red;
+    font-weight: bolder;
+}
+
+.tran {
+    opacity: 100%;
+    transition: opacity 1.5s;
+}
+
+.tran2 {
+    opacity: 0%;
+}
+
+.push {
+animation: vanish 3s infinite ;
+}
+
+@keyframes vanish {
+0% {
+    margin-left: 0px;
+    opacity: 100%;
+}
+100% {
+    margin-left: 200px;
+    opacity: 0%;
+}
+}
